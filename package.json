@@ -1,0 +1,28 @@
+{
+  "name": "vi",
+  "version": "1.0.0",
+  "description": "A simple alert app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/initialapps/OC_Alerts.git"
+  },
+  "author": "Andrew Akagawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/initialapps/OC_Alerts/issues"
+  },
+  "homepage": "https://github.com/initialapps/OC_Alerts#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
