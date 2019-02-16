@@ -36,7 +36,9 @@ Nothing yet.  Feel free to add and pull request!
 
 ## Deployment
 
-Not much to this now.  Check out the run scripts in the package.json file for how to run things.
+Not much to this now.  Check out the run scripts in the package.json files for how to run things.  
+
+The oc_alerts folder contains the server side stuff.  The client folder has the vuejs client stuff. 
 
 ## Built With
 
