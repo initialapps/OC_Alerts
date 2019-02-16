@@ -58,7 +58,7 @@ Please feel free to contribute!  Clone and pull request.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+Nothing fancy.  Anyone know any good versioning methods?
 
 ## Authors
 
@@ -71,7 +71,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
+* Thanks MEVN, MapBox, Twitter, and the opensource community
