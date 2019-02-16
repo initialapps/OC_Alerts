@@ -8,6 +8,8 @@ This is an open source project to achieve the following:
 
 Generally going to start by pulling data from the @OCSD_Bot and populating it on a map.  We'll see where this goes from there...
 
+Note: This project is just getting started, so it's a bit of a mess right now.  Nothing works yet.  Checkout the issues and project board to see where this is at.
+
 Feel free to follow, clone, contribute!  Follow along on twitter @initialapps.
 
 ## Getting Started
