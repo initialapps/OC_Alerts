@@ -1,10 +1,12 @@
 # OC Alerts
 
-A simple alerts app to visualize local crime.  This will be built on the MEVN stack, and use the twitter and mapbox APIs.
+A simple alerts app to visualize local crime.  This will be built on the MEVN stack, and use the twitter and mapbox APIs.  
 
 This is an open source project to achieve the following:
 * Learn a new framework - VueJS
 * Civic hacking - to make the world a better place!
+
+Generally going to start by pulling data from the @OCSD_Bot and populating it on a map.  We'll see where this goes from there...
 
 Feel free to follow, clone, contribute!  Follow along on twitter @initialapps.
 
