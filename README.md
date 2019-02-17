@@ -33,6 +33,29 @@ You will likely also need vue-cli:
 ```
 npm install -g @vue/cli
 ```
+## Installation
+
+Install the server dependencies
+```
+cd oc_alerts
+npm install
+```
+
+Grab your own twitter api keys and add them as environment variables in a .env file:
+
+TWITTER_CONSUMER_KEY = *Your key*
+TWITTER_CONSUMER_SECRET = *Your key*
+TWITTER_ACCESS_TOKEN_KEY = *Your key*
+TWITTER_ACCESS_TOKEN_SECRET = *Your key*
+
+Be sure to add .env and node_modules to your .gitignore file!
+
+Install the client dependencies
+```
+cd client // from the oc_alerts directory
+npm install
+```
+
 
 ## Running the tests
 

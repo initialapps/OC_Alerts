@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+require('dotenv').config();
 
 const app = express();
 
@@ -7,8 +8,8 @@ const app = express();
 app.use(cors());
 
 // Routes
-const home = require('./home');
-app.use('/home', home);
+const twitter = require('./twitter');
+app.use('/twitter', twitter);
 
 const port = process.env.PORT || 5000;
 
