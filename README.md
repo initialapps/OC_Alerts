@@ -10,7 +10,7 @@ Generally going to start by pulling data from the @OCSD_Bot and populating it on
 
 Note: This project is just getting started, so it's a bit of a mess right now.  Nothing works yet.  Checkout the issues and project board to see where this is at.
 
-Feel free to follow, clone, contribute!  Follow along on twitter @initialapps.
+Feel free to follow, clone, contribute!  There are a lot of cool things that could be done (e.g. marker color codes, map animations, pull date ranges of data, and many more).  Follow along on twitter @initialapps.
 
 ## Getting Started
 

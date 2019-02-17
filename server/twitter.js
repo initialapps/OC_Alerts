@@ -11,7 +11,6 @@ const client = new Twitter({
 
 // Get Posts from OCSD Bot
 router.get('/', (req, res) => {
-	console.log('get')
 	let params = {screen_name: 'OCSD_Bot'};
 	client.get('statuses/user_timeline', params, function(error, tweets, response) {
 		if (!error) {
