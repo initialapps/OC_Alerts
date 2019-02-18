@@ -34,6 +34,7 @@
 
 <script>
   import Mapbox from 'mapbox-gl-vue';
+  import mapboxgl from 'mapbox-gl';
   import 'bootstrap/dist/css/bootstrap.min.css';
   import 'mapbox-gl/dist/mapbox-gl.css';
   import TwitterService from "./twitterService";
@@ -46,6 +47,7 @@
     components: { Mapbox },
     methods: {
       mapLoad(map) {
+        const isMobile = /iPhone|iPad|iPod|webOS|BlackBerry|Windows Phone|Android/i.test(navigator.userAgent);
         map.easeTo({
           pitch: 60,
           bearing: 0,
@@ -57,8 +59,14 @@
             if(geoData){
               let popup = new mapboxgl.Popup().setHTML(tweet.call + '<br>' + tweet.address + '<br>' + tweet.time);
               let marker = new mapboxgl.Marker().setLngLat(geoData.features[0].center).setPopup(popup).addTo(map);
-              // Animate marker on click
-              marker.getElement().addEventListener('click', function(e){
+              let listenerType = String;
+              // Animate marker on click or touch
+              if(isMobile){
+                listenerType = 'click';
+              } else {
+                listenerType = 'touch'
+              }
+              marker.getElement().addEventListener(listenerType, function(e){
                 let change = (180*(e.clientX/window.outerWidth))-90;//bearing change by marker pos
                 let bearing = map.getBearing();
                 bearing += change;
