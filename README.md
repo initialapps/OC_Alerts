@@ -67,6 +67,8 @@ Not much to this now.  Check out the run scripts in the package.json files for h
 
 The oc_alerts folder contains the server side stuff.  The client folder has the vuejs client stuff. 
 
+Be sure to run `npm run build` from the client directory before pushing.
+
 ## Built With
 
 * [VueJS](https://vuejs.org/) - The web framework used
