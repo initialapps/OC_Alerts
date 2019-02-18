@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="overlay">
-      <div class="container">
+      <div class="container fadeIn">
         <div class="row">
           <div class="col">
             <h1>OC<small> Alerts</small></h1>
@@ -17,14 +17,15 @@
       :map-options="{
         style: 'mapbox://styles/mapbox/light-v9',
         center: [-117.78, 33.67],
-        zoom: 9
+        bearing: 180,
+        zoom: 6
       }"
       :nav-control="{ 
         show: false
       }"
       @map-load="mapLoad"
-      >
-      </mapbox>
+    >
+    </mapbox>
   </div>
 </template>
 
@@ -42,8 +43,12 @@
     components: { Mapbox },
     methods: {
       mapLoad(map) {
-        console.log(map);
-        //this.rotateCamera(0);
+        map.easeTo({
+          pitch: 45,
+          bearing: 0,
+          zoom: 9.7,
+          duration: 8000
+        });
         this.$data.tweets.map(tweet => { 
           geo.geocode('mapbox.places', tweet.address, function (err, geoData) {
             if(geoData){
@@ -52,13 +57,6 @@
             } 
           });
         })
-      },
-      rotateCamera(timestamp) {
-        // clamp the rotation between 0 -360 degrees
-        // Divide timestamp by 100 to slow rotation to ~10 degrees / sec
-        map.rotateTo((timestamp / 100) % 360, {duration: 0});
-        // Request the next frame of the animation.
-        requestAnimationFrame(rotateCamera);
       }
     },
     data(){
@@ -122,6 +120,48 @@
   }
   #map .mapboxgl-canvas {
     position: inherit !important;
+  }
+
+  .mapboxgl-popup-content {
+    font-family: "Montserrat";    
+    padding: 15px;
+  }
+
+  .fadeIn {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */     
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+  }
+
+  @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Firefox < 16 */
+  @-moz-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Internet Explorer */
+  @-ms-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  /* Opera < 12.1 */
+  @-o-keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
   }
 </style>
 
