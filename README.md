@@ -6,7 +6,7 @@ This is an open source project to achieve the following:
 * Learn a new framework - VueJS
 * Civic hacking - to make the world a better place!
 
-Generally going to start by pulling data from the @OCSD_Bot and populating it on a map.  We'll see where this goes from there...
+Generally going to start by pulling data from the @OCSD_Bot and populating it on a map.  We'll see where this goes from there.  This project is not affiliated with OCSD.
 
 Note: This project is just getting started, so it's a bit of a mess right now.  Nothing works yet.  Checkout the issues and project board to see where this is at.
 

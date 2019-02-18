@@ -15,15 +15,24 @@ class TwitterService {
 						parsedData.city = post.text
 							.toUpperCase()
 							.split('#')[1]
-							.replace("SANCLEMENTE", "SAN CLEMENTE")
-							.replace("ORANGECOUNTY", "ORANGE COUNTY")
+							.replace("ALISOVIEJO", "ALISO VIEJO")
+							.replace("DANAPOINT", "DANA POINT")
 							.replace("FOOTHILLRANCH","FOOTHILL RANCH")
 							.replace("LAKEFOREST","LAKE FOREST")
 							.replace("LAGUNAHILLS","LAGUNA HILLS")
+							.replace("LAGUNANIGUEL", "LAGUNA NIGUEL")
+							.replace("LASFLORES", "LAS FLORES")
+							.replace("MISSIONVIEJO", "MISSION VIEJO")
 							.replace("NEWPORTBEACHHARBOR", "NEWPORT BEACH HARBOR")
+							.replace("ORANGECOUNTY", "ORANGE COUNTY")
 							.replace("RANCHOSANTAMARGARITA", "RANCHO SANTA MARGARITA")
 							.replace("JOHNWAYNEAIRPORT","SANTA ANA")
-							.replace("SUNSETBEACHHARBOR", "SUNSET BEACH HARBOR");
+							.replace("SANTAANA","SANTA ANA")
+							.replace("SANCLEMENTE", "SAN CLEMENTE")
+							.replace("SANJUANCAPISTRANO", "SAN JUAN CAPISTRANO")
+							.replace("SILVERADOCANYON", "SILVERADO CANYON")
+							.replace("SUNSETBEACHHARBOR", "SUNSET BEACH HARBOR")
+							.replace("YORBALINDA", "YORBA LINDA");
 						parsedData.address = post.text.split(': ')[2]
 							.split(",")[0]
 							.replace(" BLK ", " ")
@@ -35,6 +44,7 @@ class TwitterService {
 							.replace(/ AVD$/, " AVE")
 							.replace(/ WY$/, " WAY")
 							.replace(/ CL$/, " CALLE")
+							.replace("CM D ", "CAMINO DE ")
 							.replace(" // "," AND ")
 							.trim() + ", " + parsedData.city + ", CALIFORNIA";
 						parsedData.time = post.text.split(': ')[3].split(/\n/g)[0].trim();
