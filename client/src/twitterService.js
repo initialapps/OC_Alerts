@@ -16,6 +16,7 @@ class TwitterService {
 							.toUpperCase()
 							.split('#')[1]
 							.replace("ALISOVIEJO", "ALISO VIEJO")
+							.replace("COTODECAZA", "COTO DE CAZA")
 							.replace("DANAPOINT", "DANA POINT")
 							.replace("FOOTHILLRANCH","FOOTHILL RANCH")
 							.replace("LAKEFOREST","LAKE FOREST")
