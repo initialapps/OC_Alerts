@@ -57,9 +57,17 @@ npm install
 ```
 
 
-## Running the tests
+## Development
 
-Nothing yet.  Feel free to add and pull request!
+To start your development server, from the root directory run:
+```
+npm run dev
+```
+
+To build your client scripts run:
+```
+npm serve
+```
 
 ## Deployment
 
