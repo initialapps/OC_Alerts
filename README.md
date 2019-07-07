@@ -64,9 +64,9 @@ To start your development server, from the root directory run:
 npm run dev
 ```
 
-To build your client scripts run:
+To start the vue client, from the client directory run:
 ```
-npm serve
+npm run serve
 ```
 
 ## Deployment
