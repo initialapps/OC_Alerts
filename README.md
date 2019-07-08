@@ -6,9 +6,9 @@ This is an open source project to achieve the following:
 * Learn a new framework - VueJS
 * Civic hacking - to make the world a better place!
 
-Generally going to start by pulling data from the @OCSD_Bot and populating it on a map.  We'll see where this goes from there.  This project is not affiliated with OCSD.
+This got started by pulling data from the @OCSD_Bot and populating it on a map.  This project is not affiliated with OCSD.
 
-Note: This project is just getting started, so it's a bit of a mess right now.  Nothing works yet.  Checkout the issues and project board to see where this is at.
+Note: This project stopped working after the @OCSD_Bot stopped tweeting.  Maybe this can be updated with data from somewhere else...
 
 Feel free to follow, clone, contribute!  There are a lot of cool things that could be done (e.g. marker color codes, map animations, pull date ranges of data, and many more).  Follow along on twitter @initialapps.
 
@@ -71,7 +71,7 @@ npm run serve
 
 ## Deployment
 
-Not much to this now.  Check out the run scripts in the package.json files for how to run things.  
+Check out the run scripts in the package.json files for how to run things.  
 
 The oc_alerts folder contains the server side stuff.  The client folder has the vuejs client stuff. 
 
